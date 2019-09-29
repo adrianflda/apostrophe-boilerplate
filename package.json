@@ -4,7 +4,8 @@
   "description": "Minimal Apostrophe Boilerplate",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "listURL": "node app apostrophe-passport:list-urls"
   },
   "repository": {
     "type": "git",
