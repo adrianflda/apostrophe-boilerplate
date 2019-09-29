@@ -16,6 +16,7 @@
   "dependencies": {
     "apostrophe": "^2.47.0",
     "apostrophe-passport": "^2.1.0",
+    "apostrophe-saml": "^2.3.1",
     "passport-oauth2": "^1.5.0"
   },
   "nodemonConfig": {
