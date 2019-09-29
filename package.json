@@ -13,7 +13,9 @@
   "author": "P'unk Avenue",
   "license": "MIT",
   "dependencies": {
-    "apostrophe": "^2.47.0"
+    "apostrophe": "^2.47.0",
+    "apostrophe-passport": "^2.1.0",
+    "passport-oauth2": "^1.5.0"
   },
   "nodemonConfig": {
     "verbose": true,
