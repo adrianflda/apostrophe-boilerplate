@@ -2,6 +2,7 @@ var path = require('path');
 
 var apos = require('apostrophe')({
   shortName: 'apostrophe-boilerplate',
+  baseUrl: 'https://apostrophe.dnsroute53test.net',
 
   // See lib/modules for basic project-level configuration of our modules
   // responsible for serving static assets, managing page templates and
