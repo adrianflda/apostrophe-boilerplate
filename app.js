@@ -34,7 +34,7 @@ var apos = require('apostrophe')({
           // You must npm install --save this module in your project first
           module: 'passport-oauth2',
           // Default is to match usernames, google has none, so match on emails
-          match: 'email',
+          //match: 'email',
           // IMPORTANT: accept only users with an email address at our company
           //emailDomain: 'mycompany.com',
           options: {
