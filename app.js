@@ -45,6 +45,7 @@ var apos = require('apostrophe')({
             clientID: '00000000-0000-0000-0000-000000000017',
             clientSecret: 'h45nAT7L_LPpX_2AzaYEefrOn0A91kdAysdg3zZfcQQ',
             callbackURL: 'https://apostrophe.dnsroute53test.net/auth/oauth2/callback',
+            passReqToCallback: true
           },
           // Options that must be passed to the authenticate middleware
           authenticate: {
