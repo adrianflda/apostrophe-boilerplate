@@ -26,7 +26,7 @@ var apos = require('apostrophe')({
     },
     'apostrophe-db': {
       uri: `mongodb://${process.env.MONGODB_PORT_27017_TCP_ADDR}:${process.env.MONGODB_PORT_27017_TCP_PORT}/oauth2`
-    },
+    }/* ,
     'apostrophe-passport': {
       strategies: [
         {
@@ -50,7 +50,7 @@ var apos = require('apostrophe')({
           authenticate: {
             // minimum scopes for matching logins based on email addresses.
             // profile is absolutely required, you almost certainly want email too
-            scope: ['profile']
+            scope: ['usr']
           }
         }
       ],
@@ -64,6 +64,44 @@ var apos = require('apostrophe')({
           permissions: ['admin']
         }
       }
+    } */,
+    'apostrophe-saml': {
+      // OPTIONAL: create users if they do not already exist.
+      // Assign them as members of a group called `from-shibboleth` and
+      // grant them Apostrophe's `admin` permission (TOTAL CONTROL, use sparingly).
+      create: {
+        group: {
+          title: 'apostrophe',
+          permissions: ['admin']
+        }
+      },
+      // OPTIONAL
+      // attributeMapping: {
+      //   [see below]
+      // },
+      // This is the default issuer name sent to the identity provider.
+      //
+      // Must be a unique identifier, usually a URL much like this one.
+      // Usually by prior agreement with your identity provider.
+      issuer: 'https://apostrophe.dnsroute53test.net/metadata.xml',
+      // This is the default. NOTE: changing this without telling
+      // your identity provider may result in mysterious failed logins.
+      // Make sure they are on board with what this URL has been set to
+      callbackUrl: 'https://apostrophe.dnsroute53test.net/samlv2/callback'
+      //
+      // OPTIONAL: Extra passport-saml options
+      // Configuring saml in your environment can be tricky, and most
+      // environments have unique aspects to them that aren't handled
+      // directly by this wrapper. To help with this problem, you can
+      // pass extra passport-saml options through the following object.
+      // More details about available options can be found here:
+      // https://github.com/bergie/passport-saml#config-parameter-details
+      //
+      //  passportSamlOptions: {
+      //    disableRequestedAuthnContext: true,
+      //    logoutUrl: 'https://examples.com/auth/saml/SLO',
+      //    forceAuthn: true 
+      //  }
     },
     'apostrophe-login': {
       // We disable it here, by configuring the built-in apostrophe-login` module

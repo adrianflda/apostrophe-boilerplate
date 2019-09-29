@@ -1,0 +1,17 @@
+<ns2:EntityDescriptor xmlns="http://www.w3.org/2000/09/xmldsig#" 
+    xmlns:ns2="urn:oasis:names:tc:SAML:2.0:metadata" 
+    xmlns:ns3="http://www.w3.org/2001/04/xmlenc#" 
+    xmlns:ns4="urn:oasis:names:tc:SAML:2.0:assertion" entityID="https://auth.vrewardsapps.com/samlv2/9a212ec9-0319-2331-036c-d913c8275bbe" ID="_9a212ec9-0319-2331-036c-d913c8275bbe">
+    <ns2:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <ns2:KeyDescriptor use="signing">
+            <KeyInfo>
+                <X509Data>
+                    <X509Certificate>
+MIICyTCCAbGgAwIBAQIRAOfyRZugeETvj8MSpXU0LYUwDQYJKoZIhvcNAQELBQAwIDEeMBwGA1UEAxMVYXV0aC52cmV3YXJkc2FwcHMuY29tMB4XDTE5MDkyOTE5MjUyNFoXDTI5MDkyOTE5MjUyNFowIDEeMBwGA1UEAxMVYXV0aC52cmV3YXJkc2FwcHMuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgSDBodq9SDuPW9sQpFXbNbEc4DF2sa3rwV5siS8f1o9R1gvCoVw3yEx5dcmQ0TF1ggSuYVJZdCOX4LD+xNkMEvf2dgz4ul/PYX+mM7TKd8EQ3iKcQusZLWLbzavzm4ixl8sP09Pf+KuaQnCHp4SIvyd1D5+TQoiEuVRoBGZVvRgwOwJ+IG9hn28uJg+zxCGSwBBSptcLgM0n0+te9ZoGHlMPs8jH8EXZTZRtJcbjAWNsm23/6qbw2Kr8uLIWEjQTHIamlAHfgj5OavPxoT0bcmRBbCshKKauJfk+KG8GTpLGS/A769EbdDt25TonUP8ULqUWLeU2WJrCWSeK5d2CswIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQBAfaTNP5VHvQbfadfX0omJH8CfUFwxA6eXPoN92PzyhBYJ2mT+GEQrkufvEL6yl7VvGGSmrqCzxV7T7jQbu5mPDE71ZpqpL55Nojdj+76gHU8LRYYokf69Kc/KPWqQ1M2GGi18KOTv/XGsSVuxv8bveRLjZbXmX99zxecr6YUwgnf51MrL3qKe5x/CdTcldIbL8n73vfwS2Ij7ys4L52iSxH0L+HKnxs/xop8h22GKfnld/pu9xrEh7ouFTrmrtaaIuwFAluNUUNcitfkj76bk67353xKnf4fYxXv7l/+ZUpnXPXzxMY8TXfpN/0uRlS0hdI2NKYt880Dk6sbwKDo+
+                    </X509Certificate>
+                </X509Data>
+            </KeyInfo>
+        </ns2:KeyDescriptor>
+        <ns2:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://auth.vrewardsapps.com/samlv2/login/9a212ec9-0319-2331-036c-d913c8275bbe"/>
+    </ns2:IDPSSODescriptor>
+</ns2:EntityDescriptor>
