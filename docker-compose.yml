@@ -21,7 +21,7 @@ services:
     depends_on:
       - mongo
     environment:
-      MONGODB_PORT_27017_TCP_ADDR: 'mongodb://mongo'
+      MONGODB_PORT_27017_TCP_ADDR: 'mongo'
       MONGODB_PORT_27017_TCP_PORT: '27017'
       APOS_ALWAYS_COPY_ASSETS: '1'
     restart: always

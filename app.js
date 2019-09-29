@@ -24,7 +24,7 @@ var apos = require('apostrophe')({
       viewsFolderFallback: path.join(__dirname, 'views')
     },
     'apostrophe-db': {
-      uri: 'mongodb://' + process.env.MONGODB_PORT_27017_TCP_ADDR + ':' + process.env.MONGODB_PORT_27017_TCP_PORT + '/oauth2'
+      uri: `mongodb://${process.env.MONGODB_PORT_27017_TCP_ADDR}:${process.env.MONGODB_PORT_27017_TCP_PORT}/oauth2`
     },
 
   }
