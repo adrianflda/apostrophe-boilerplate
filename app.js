@@ -51,7 +51,7 @@ var apos = require('apostrophe')({
           authenticate: {
             // minimum scopes for matching logins based on email addresses.
             // profile is absolutely required, you almost certainly want email too
-            scope: ['profile']
+            scope: ['profile', 'email']
           }
         }
       ],
