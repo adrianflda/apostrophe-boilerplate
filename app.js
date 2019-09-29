@@ -43,7 +43,8 @@ var apos = require('apostrophe')({
             authorizationURL: 'https://auth.vrewardsapps.com/oauth2/authorize',
             tokenURL: 'https://auth.vrewardsapps.com/oauth2/token',
             clientID: '00000000-0000-0000-0000-000000000017',
-            clientSecret: 'h45nAT7L_LPpX_2AzaYEefrOn0A91kdAysdg3zZfcQQ'
+            clientSecret: 'h45nAT7L_LPpX_2AzaYEefrOn0A91kdAysdg3zZfcQQ',
+            callbackURL: 'https://apostrophe.dnsroute53test.net/auth/oauth2/callback',
           },
           // Options that must be passed to the authenticate middleware
           authenticate: {
